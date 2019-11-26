@@ -1,0 +1,192 @@
+.modal-container {
+  width: 100vw;
+  height: 100%;
+  background: #ffffffe5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.modal-container.mostrar {
+  display: flex;
+}
+.modal {
+  position: relative;
+  /* top: 0; */
+  /* margin: 10px 30px; */
+  width: 90%;
+  height: 90%;
+  min-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  background: #161616;
+  color: #fff;
+  
+}
+.modal .avatar {
+  max-width: 102px;
+  margin: 10px;
+}
+.modal .button {
+  max-width: 200px;
+}
+.modal .button img {
+  width: 40px;
+  height: 40px;
+}
+.modal .avatar img {
+  border-radius: 5px;
+}
+.modal .descricao {
+  width: 100%;
+  max-width: 600px;
+  font-size: calc(0.55rem + .2vw + .2vh);
+}
+@keyframes modal {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal {
+  animation: modal .3s;
+}
+.modal .exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 0 10px;
+  font-size: 18px;
+
+}
+
+/* ------------------------------ */
+
+.modal-container-portifolio {
+  width: 100vw;
+  height: 100%;
+  background: #ffffffe5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  margin: 0;
+  padding: 10px;
+  display: none;
+  justify-content: center !important;
+}
+.modal-container-portifolio.mostrar {
+  display: flex;
+}
+.modal-p {
+  position: relative;
+  /* min-width: 80vw; */
+  max-width: 85vw;
+  max-height: 85vh;
+  min-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  background: #161616;
+  color: #fff;
+  padding-top: 80px;
+}
+
+@keyframes modal-p {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal-p {
+  animation: modal .5s;
+}
+.modal-p .exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2200;
+  border-radius: 0 5px 0 0;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+}
+.modal-p .github figure img{
+  width: 20px;
+  height: 20px;
+}
+.modal-p .github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2200;
+  margin-right: 60px;
+  border-radius: 0 0 0 10px;
+  background: #272727;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #cf1717;
+}
+.modal-p .slide {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 90%;
+}
+.modal-p .slide figure {
+  width: 100%;
+  /* max-width: 700px; */
+  height: 100%;
+  min-height: 100%;
+}
+.modal-p .slide figure img {
+  width: 100%;
+  /* max-width: 800px; */
+  min-height: 100%;
+  /* max-height: 100%; */
+}
+.modal-p .tags {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  background: #000000ce;
+  border-radius: 5px;
+  width: 100%;
+  height: 90px;
+  padding: 0 5px;
+  justify-content: initial !important;
+  flex-wrap: nowrap;
+}
+.modal-p .tags .box-tags {
+  width: 150px;
+}
+.modal-p .tags .tag {
+  background: #333333ce;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 3px;
+  margin: 2px;
+}
+.modal-p .tags .box-desc h2{
+  font-size: 16px;
+  margin-left: 20px;
+}
+.modal-p .tags .box-desc p{
+  font-size: calc(0.75rem + 0.10vw);
+  text-align: left;
+  margin-top: 10px;
+}
