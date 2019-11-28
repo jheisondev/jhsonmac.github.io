@@ -73,8 +73,8 @@
 
 .modal-container-portifolio {
   width: 100vw;
-  height: 100%;
-  background: #ffffffe5;
+  height: 100vh;
+  background: #131313ef;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -89,13 +89,13 @@
 }
 .modal-p {
   position: relative;
-  /* min-width: 80vw; */
-  max-width: 85vw;
-  max-height: 85vh;
-  min-height: 80vh;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000000;
-  background: #161616;
+  width: 95%;
+  height: 90%;
+  max-width: 700px;
+  max-height: 550px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ffffff74;
+  background: #0f0f0f;
   color: #fff;
   padding-top: 80px;
 }
@@ -138,35 +138,36 @@
   background: #272727;
   width: 50px;
   height: 40px;
-  border: 1px solid #cf1717;
+  border: 1px solid #694040;
 }
 .modal-p .slide {
   position: relative;
-  width: 100%;
+  min-width: 100%;
   max-width: 700px;
-  height: 100%;
-  max-height: 90%;
+  min-height: 96%;
+  max-height: 96%;
 }
 .modal-p .slide figure {
-  width: 100%;
+  min-width: 100%;
   /* max-width: 700px; */
-  height: 100%;
   min-height: 100%;
+  min-height: 100%;
+  top: 10px;
 }
 .modal-p .slide figure img {
   width: 100%;
   /* max-width: 800px; */
-  min-height: 100%;
+  height: 100%;
   /* max-height: 100%; */
 }
 .modal-p .tags {
   position: absolute;
   top: 0;
   margin: 0 auto;
-  background: #000000ce;
+  background: #000000;
   border-radius: 5px;
   width: 100%;
-  height: 90px;
+  height: 100px;
   padding: 0 5px;
   justify-content: initial !important;
   flex-wrap: nowrap;
@@ -182,7 +183,7 @@
   margin: 2px;
 }
 .modal-p .tags .box-desc h2{
-  font-size: 16px;
+  font-size: calc(0.70rem + 0.50vw);
   margin-left: 20px;
 }
 .modal-p .tags .box-desc p{
