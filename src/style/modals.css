@@ -123,6 +123,7 @@
   font-size: 18px;
   width: 40px;
   height: 40px;
+  border: 1px solid #694040;
 }
 .modal-p .github figure img{
   width: 20px;
