@@ -30,7 +30,24 @@
 .bg-slateblue {
   background: slateblue;
 }
-
+.bg-yellow {
+  background: yellow;
+}
+.bg-tomato {
+  background: tomato;
+}
+.bg-grey {
+  background: slategrey;
+}
+.bg-blue {
+  background: royalblue;
+}
+.bg-red {
+  background: red;
+}
+.bg-pgreen {
+  background: palegreen;
+}
 .order-1 {
   order: 1;
 }
@@ -151,7 +168,7 @@ main {
   max-height: 98vh;
   padding: 5px 10px;
   background: linear-gradient(180deg, #00000000,#161616d3,#000000);
-  box-shadow: 0 0 5px #7e7e7e7f;
+  box-shadow: 0 2px 5px #7e7e7e7f;
 }
 section, article {
   width: 100%;
