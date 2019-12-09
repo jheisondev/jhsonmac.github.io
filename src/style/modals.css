@@ -30,11 +30,19 @@
   margin: 10px;
 }
 .modal .button {
+  margin-left: 25px;
   max-width: 200px;
 }
+.modal .button button {
+  background: #272727;
+  color: aliceblue;
+}
+.modal .button button:hover {
+  background: #3c3838;
+}
 .modal .button img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .modal .avatar img {
   border-radius: 5px;
@@ -42,6 +50,11 @@
 .modal .descricao {
   width: 100%;
   max-width: 600px;
+  font-size: calc(0.50rem + .2vw + .2vh);
+}
+.modal .descricao a {
+  font-weight: bold;
+  color: #0088d1;
   font-size: calc(0.55rem + .2vw + .2vh);
 }
 @keyframes modal {

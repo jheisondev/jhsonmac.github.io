@@ -133,7 +133,7 @@ body {
 }
 header {
   height: 100vh;
-  background: url('../../assets/img/nebulosa.jpg') no-repeat;
+  background: url('../../assets/img/code.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   justify-content: center !important;
@@ -228,7 +228,7 @@ section, article {
   height: 100%;
   min-height: 100vh;
   padding: 10px 0;
-  background: url('../../assets/img/teclado.jpg') no-repeat;
+  background: url('../../assets/img/rocket.png') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -312,7 +312,7 @@ section, article {
 .portifolio {
   justify-content: flex-start!important;
   min-height: 100vh;
-  background: url('../../assets/img/landscape.jpg') no-repeat;
+  background: url('../../assets/img/nebulosa.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   padding: 20px 0;
