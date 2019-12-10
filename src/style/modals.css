@@ -1,7 +1,7 @@
 .modal-container {
   width: 100vw;
   height: 100%;
-  background: #ffffffe5;
+  background: #e7e7e7;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -23,7 +23,6 @@
   box-shadow: 0 0 10px #000000;
   background: #161616;
   color: #fff;
-  
 }
 .modal .avatar {
   max-width: 102px;
@@ -83,32 +82,32 @@
 /* ------------------------------ */
 
 .modal-container-portifolio {
+  max-width: 100vw;
   width: 100vw;
+  max-height: 100vh;
   height: 100vh;
-  background: #000000ef;
+  background: #e7e7e7;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 1000;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   display: none;
-  justify-content: center !important;
 }
 .modal-container-portifolio.mostrar {
   display: flex;
 }
 .modal-p {
   position: relative;
-  width: 98%;
-  height: 98%;
-  max-width: 700px;
-  max-height: 600px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #ffffff3d;
-  background: #000000;
+  max-width: 90vw;
+  min-width: 320px;
+  min-height: 80vh;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  background: #f1f1f1;
   color: #fff;
-  padding-top: 80px;
 }
 
 @keyframes modal-p {
@@ -130,7 +129,7 @@
   top: 0;
   right: 0;
   z-index: 2200;
-  border-radius: 0 5px 0 0;
+  border-radius: 0 10px 0 0;
   font-size: 18px;
   width: 40px;
   height: 40px;
@@ -153,39 +152,29 @@
   border: 1px solid #694040;
 }
 .modal-p .slide {
-  position: relative;
-  min-width: 100%;
-  max-width: 700px;
-  min-height: 96%;
-  max-height: 96%;
+  width: 100%;
 }
 .modal-p .slide figure {
-  min-width: 100%;
-  /* max-width: 700px; */
-  min-height: 100%;
-  min-height: 100%;
-  top: 10px;
+  border-radius: 5px 5px 0 0;
+  background: #f1f1f1;
 }
 .modal-p .slide figure img {
-  width: 100%;
-  /* max-width: 800px; */
-  height: 100%;
-  /* max-height: 100%; */
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .modal-p .tags {
-  position: absolute;
-  top: 0;
-  margin: 0 auto;
-  background: #000000;
-  border-radius: 5px;
+  /* position: absolute; */
+  top: 100;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
   width: 100%;
-  height: 100px;
-  padding: 0 5px;
-  justify-content: initial !important;
+  height: 70px;
+  padding: 5px;
   flex-wrap: nowrap;
 }
 .modal-p .tags .box-tags {
-  width: 150px;
+  max-width: 90%;
 }
 .modal-p .tags .tag {
   background: #333333ce;
@@ -194,12 +183,13 @@
   padding: 3px;
   margin: 2px;
 }
-.modal-p .tags .box-desc h2{
-  font-size: calc(0.70rem + 0.50vw);
-  margin-left: 20px;
+.modal-p .box-desc h2{
+  font-size: calc(0.70rem + 0.55vw);
+  color: #161616;
 }
-.modal-p .tags .box-desc p{
-  font-size: calc(0.75rem + 0.10vw);
+.modal-p .box-desc p{
+  font-size: calc(0.75rem + 0.15vw);
   text-align: left;
-  margin-top: 10px;
+  color: #161616;
+  /* margin-top: 10px; */
 }

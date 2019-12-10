@@ -10,6 +10,10 @@ function iniciaModal(modalId) {
   }
 }
 
+const vid = document.querySelector('.iframe');
+
+
+
 const button = document.querySelector('.modal-more');
 button.addEventListener('click', () => iniciaModal('modal-container'));
 
