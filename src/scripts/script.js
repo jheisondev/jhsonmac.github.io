@@ -10,9 +10,6 @@ function iniciaModal(modalId) {
   }
 }
 
-const vid = document.querySelector('.iframe');
-
-
 
 const button = document.querySelector('.modal-more');
 button.addEventListener('click', () => iniciaModal('modal-container'));
@@ -42,3 +39,31 @@ modal_portifolio5.addEventListener('click', () => iniciaModal('modal-container-p
 const modal_portifolio6 = document.querySelector('.mp-6');
 modal_portifolio6.addEventListener('click', () => iniciaModal('modal-container-portifolio-6'));
 
+
+
+// Scroll sections
+
+const menuItem = document.querySelectorAll('.nav a[href^="#"]');
+
+menuItem.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+})
+
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+}
+
+function scrollToIdOnClick(event) {
+    event.preventDefault();
+    const to = getScrollTopByHref(event.target);
+
+    ScrollToPosition(to);
+}
+
+function ScrollToPosition(to) {
+    window.scroll({
+        top: to,
+        behavior: "smooth", 
+    });
+}

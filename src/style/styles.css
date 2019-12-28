@@ -133,7 +133,7 @@ body {
 }
 header {
   height: 100vh;
-  background: url('../../assets/img/code.jpg') no-repeat;
+  background: url('../../assets/img/code.webp') no-repeat;
   background-position: center;
   background-size: cover;
   justify-content: center !important;
@@ -228,7 +228,7 @@ section, article {
   height: 100%;
   min-height: 100vh;
   padding: 10px 0;
-  background: url('../../assets/img/rocket.png') no-repeat;
+  background: url('../../assets/img/rocket.webp') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -312,7 +312,7 @@ section, article {
 .portifolio {
   justify-content: flex-start!important;
   min-height: 100vh;
-  background: url('../../assets/img/nebulosa.jpg') no-repeat;
+  background: url('../../assets/img/nebulosa.webp') no-repeat;
   background-size: cover;
   background-position: center;
   padding: 20px 0;
@@ -413,3 +413,293 @@ footer {
 .box-contact button {
   padding: 0 5px;
 }
+
+
+/* MODALS */
+
+.modal-container {
+  width: 100vw;
+  height: 100%;
+  background: #e7e7e7;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.modal-container.mostrar {
+  display: flex;
+}
+.modal {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  min-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  background: #161616;
+  color: #fff;
+}
+.modal .avatar {
+  max-width: 102px;
+  margin: 10px;
+}
+.modal .button {
+  margin-left: 25px;
+  max-width: 200px;
+}
+.modal .button button {
+  background: #272727;
+  color: aliceblue;
+}
+.modal .button button:hover {
+  background: #3c3838;
+}
+.modal .button img {
+  width: 30px;
+  height: 30px;
+}
+.modal .avatar img {
+  border-radius: 5px;
+}
+.modal .descricao {
+  width: 100%;
+  max-width: 600px;
+  font-size: calc(0.50rem + .2vw + .2vh);
+}
+.modal .descricao a {
+  font-weight: bold;
+  color: #0088d1;
+  font-size: calc(0.55rem + .2vw + .2vh);
+}
+@keyframes modal {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal {
+  animation: modal .3s;
+}
+.modal .exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 0 10px;
+  font-size: 18px;
+
+}
+
+/* ------------------------------ */
+
+.modal-container-portifolio {
+  max-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  background: #e7e7e7;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.modal-container-portifolio.mostrar {
+  display: flex;
+}
+.modal-p {
+  position: relative;
+  max-width: 90vw;
+  min-width: 320px;
+  min-height: 80vh;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  background: #f1f1f1;
+  color: #fff;
+}
+
+@keyframes modal-p {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal-p {
+  animation: modal .5s;
+}
+.modal-p .exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2200;
+  border-radius: 0 10px 0 0;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #694040;
+}
+.modal-p .github figure img{
+  width: 20px;
+  height: 20px;
+}
+.modal-p .github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2200;
+  margin-right: 60px;
+  border-radius: 0 0 0 10px;
+  background: #272727;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #694040;
+}
+.modal-p .slide {
+  width: 100%;
+}
+.modal-p .slide figure {
+  border-radius: 5px 5px 0 0;
+  background: #f1f1f1;
+}
+.modal-p .slide figure img {
+  border-radius: 5px;
+  max-width: 800px;
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+}
+.modal-p .tags {
+  /* position: absolute; */
+  top: 100;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  flex-wrap: nowrap;
+}
+.modal-p .tags .box-tags {
+  max-width: 90%;
+}
+.modal-p .tags .tag {
+  background: #333333ce;
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 3px;
+  margin: 2px;
+}
+.modal-p .box-desc h2{
+  font-size: calc(0.70rem + 0.55vw);
+  color: #161616;
+}
+.modal-p .box-desc p{
+  font-size: calc(0.75rem + 0.15vw);
+  text-align: left;
+  color: #161616;
+  /* margin-top: 10px; */
+}
+
+/* MODALS */
+
+/* SKILLS */
+
+.col {
+  width: 95%;
+  max-width: 1000px;
+  margin: 1px 0;
+  cursor: pointer;
+  /* margin-left: -5px;
+  margin-bottom: -5px; */
+}
+.container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.front p {
+  font-size: calc(0.70rem + 1vw);
+  color: #e2e2e2;
+}
+.back p {
+  font-size: calc(0.60rem + .3vw);
+  color: #e2e2e2;
+}
+.front, .back {
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+  min-height: 70px;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 10px #ffffff31;
+}
+.front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  backface-visibility: hidden;
+}
+.container:hover .front, 
+.container:hover .back {
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.inner {
+  transform: translateY(-50%) translateZ(59px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+}
+.container .back {
+  background: #000000;
+  transform: rotateX(180deg);
+  transform-style: preserve-3d;
+}
+.container .front {
+  background: #000000;
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
+}
+.container:hover .back {
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
+}
+.container:hover .front {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+}
+
+/* SKILLS */
