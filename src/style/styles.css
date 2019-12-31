@@ -8,7 +8,9 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
-
+.bg-trans {
+  background: linear-gradient(180deg,#2727273d, #000);
+}
 .bg-green {
   background: forestgreen;
 }
@@ -228,7 +230,8 @@ section, article {
   height: 100%;
   min-height: 100vh;
   padding: 10px 0;
-  background: url('../../assets/img/rocket.webp') no-repeat;
+  background: #1f1f1f;
+  background: url('../../assets/roda\ gigante.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -280,7 +283,7 @@ section, article {
 /* -------------- */
 
 .cards-skill .card {
-  margin: 39px 1px -55px 1px;
+  margin: 30px 1px -45px 1px;
 }
 .cards-skill {
   min-width: 100%;
@@ -294,20 +297,51 @@ section, article {
   width: 95%;
   max-height: 98vh;
   max-width: 1000px;
-  margin: 0 auto;
   padding: 10px;
-  background: linear-gradient(180deg, #00000000,#161616e8,#000000);
-  box-shadow: 0 0 5px #7e7e7e7f;
+  margin-bottom: 30px;
 }
-.desc-skills .box-fcc {
+.box-fcc {
   width: 100%;
-  text-align: center;
-  margin-top: 50px;
+  max-width: 980px;
+  text-align: left;
   padding: 10px;
-  color: #868686;
+  background: linear-gradient(180deg, #2c0b2b66, #000e0c);
+  box-shadow: 0 0 5px #0707077f;
 }
-.cwhite {
+.box-fcc p {
   color: #ffffff;
+  padding: 20px;
+  font-size: calc(0.75rem + 0.1vw);
+  text-align: left;
+}
+.line {
+  background: #f5f5f5;
+  width: 100%;
+  max-width: 500px;
+  height: 1px;
+  margin-bottom: 10px;
+}
+.cards-s .card {
+  justify-content: space-around;
+  margin: 5px;
+  background: #272727;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 200px;
+  height: 280px;
+  border: 1px solid #0000007b;
+  border-radius: 2px;
+  box-shadow: 0 0 15px -5px #ff00aa;
+  background: linear-gradient(360deg, #8c688b6b, #051f1ced);
+}
+.cards-s .card .sub-title {
+  color: #ffffff;
+  font-size: calc(1rem + 0.1vw + 0.1vh);
+}
+.cards-s .card p {
+  color: #c3c3c3;
+  font-size: calc(0.75rem + 0.1vw);
+  margin-bottom: 10px;
 }
 .portifolio {
   justify-content: flex-start!important;
