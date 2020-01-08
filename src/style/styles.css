@@ -8,48 +8,13 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
-.bg-trans {
-  background: linear-gradient(180deg,#2727273d, #000);
-}
-.bg-green {
-  background: forestgreen;
-}
-.bg-orange {
-  background: chocolate;
-}
-.bg-pink {
-  background: lightpink;
-}
-.bg-lblue {
-  background: lightseagreen;
-}
-.bg-magenta {
-  background: magenta;
+.bg-black {
+  background: #000;
 }
 .bg-cream {
-  background: mintcream;
+  background: #e2e2e2;
 }
-.bg-slateblue {
-  background: slateblue;
-}
-.bg-yellow {
-  background: yellow;
-}
-.bg-tomato {
-  background: tomato;
-}
-.bg-grey {
-  background: slategrey;
-}
-.bg-blue {
-  background: royalblue;
-}
-.bg-red {
-  background: red;
-}
-.bg-pgreen {
-  background: palegreen;
-}
+
 .order-1 {
   order: 1;
 }
