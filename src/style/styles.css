@@ -277,9 +277,8 @@ section, article {
   text-align: center;
 }
 .line {
-  background: #f5f5f5;
-  width: 100%;
-  max-width: 500px;
+  background: #cfc8c882;
+  width: 50vw;
   height: 1px;
   margin-bottom: 10px;
 }
@@ -365,7 +364,7 @@ footer {
   width: 100%;
   max-width: 500;
   padding: 20px 10px;
-  background: #09061b;
+  background: #1a1a1aa7;
 }
 .swiper-container {
   width: 100%;
