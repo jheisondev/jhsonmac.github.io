@@ -126,7 +126,7 @@ nav .item-menu a:hover {
 }
 main {
   min-height: 100vh;
-  background: #1a1a1a;
+  background: #09061b;
 }
 .box-translucid {
   width: 98%;
@@ -195,7 +195,7 @@ section, article {
   height: 100%;
   min-height: 100vh;
   padding: 10px 0;
-  background: #1f1f1f;
+  background: #020220;
   /* background: url('../../assets/roda\ gigante.jpg') no-repeat;
   background-size: cover;
   background-position: center; */
@@ -284,17 +284,17 @@ section, article {
   margin-bottom: 10px;
 }
 .cards-s .card {
+  align-items: flex-start;
   justify-content: space-around;
   margin: 5px;
-  background: #272727;
   padding: 20px 10px;
   width: 100%;
   max-width: 200px;
   height: 280px;
-  border: 1px solid #0000007b;
+  border: 1px solid #00b3ff27;
   border-radius: 2px;
-  box-shadow: 0 0 8px -5px #4b1039;
-  background: linear-gradient(180deg, #0805086b, #051f1ced);
+  box-shadow: 0 0 8px -5px #959595;
+  background: #09061b;
 }
 .cards-s .card .sub-title {
   color: #ffffff;
@@ -365,7 +365,7 @@ footer {
   width: 100%;
   max-width: 500;
   padding: 20px 10px;
-  background: #0c0c0c;
+  background: #09061b;
 }
 .swiper-container {
   width: 100%;
