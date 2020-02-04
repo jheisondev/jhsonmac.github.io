@@ -52,22 +52,22 @@
 .title {
   font-family: 'Liu Jian Mao Cao', cursive, sans-serif;
   font-size: calc(0.75rem + 3.4vw);
-  color: #000;
+  color: #ffffff;
 }
 .sub-title {
   font-family: 'Roboto', cursive, sans-serif;
   font-size: calc(0.75rem + 2.3vw);
   font-weight: bold;
-  color: #000;
+  color: #e2e2e2;
 }
 .frase {
   font-family: 'Liu Jian Mao Cao', cursive, sans-serif;
   font-size: calc(0.75rem + 1vw);
-  color: #000;
+  color: #e2e2e2;
 }
 .text {
   font-size: calc(0.70rem + .40vw);
-  color: #000000;
+  color: #e2e2e2;
 }
 .transparent {
   background: rgb(0,0,0, 0);
@@ -75,7 +75,9 @@
 .sb {
   justify-content: space-between;
 }
-
+.colorWhite {
+ color: #fff;
+}
 textarea:focus, input:focus, select:focus, button:focus {
   border-color: none !important;
   outline: 0;
@@ -95,11 +97,13 @@ button:hover {
 body {
   max-width: 100vw;
   min-height: 100%;
-  background: #fff;
+  background: #262626;
 }
 header {
   height: 100vh;
-  background: #ffffff;
+  background: url('../../assets/img/fundo.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
   justify-content: center !important;
 }
 header h1 {
@@ -125,7 +129,7 @@ nav .item-menu a:hover {
 }
 main {
   min-height: 100vh;
-  background: #fff;
+  background: #161616;
 }
 .box-translucid {
   width: 98%;
@@ -133,7 +137,8 @@ main {
   min-height: 400px;
   max-height: 98vh;
   padding: 5px 10px;
-  box-shadow: 0 2px 100px #2f4000;
+  background: #000000;
+  box-shadow: 0 2px 20px #000000;
 }
 section, article {
   width: 100%;
@@ -156,7 +161,7 @@ section, article {
   width: 100%;
   max-width: 700px;
   margin-top: 10px;
-  color: #484848;
+  color: #e2e2e2;
 }
 .box-about button {
   margin: 5px 5px;
@@ -213,7 +218,7 @@ section, article {
 
 .box-portifolio {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   padding: 10px 5px;
   margin-bottom: 50px;
 }
@@ -221,7 +226,7 @@ section, article {
 .projetos .card {
   margin: 40px 0 10px 0;
   width: 100%;
-  max-width: 600px;
+  max-width: 980px;
   min-height: 580px;
   padding: 10px;
   border: 1px solid #7eac00;
@@ -233,17 +238,20 @@ section, article {
 .card .img-projeto {
   margin: 30px;
   width: 100%;
-  max-width: 450px;
-  box-shadow: 3px 5px 25px #202c00;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px #000000;
 }
 
 .card .description {
   text-align: center;
   margin-bottom: 10px;
-  color: #3e3e3e;
+  color: #aeaeae;
 }
 
 .card .techs {
+  color: #e2e2e2;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -259,6 +267,7 @@ section, article {
 .frase-inspired .box-frase {
   border-style: dashed;
   border-color: #7eac00;
+  color: #e2e2e2;
   padding: 20px;
 }
 .contact {
@@ -316,7 +325,7 @@ footer {
   min-width: 350px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 2px 20px #000000;
   background: #161616;
   color: #fff;
 }
