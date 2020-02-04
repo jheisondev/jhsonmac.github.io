@@ -227,12 +227,12 @@ section, article {
   margin: 40px 0 10px 0;
   width: 100%;
   max-width: 980px;
-  min-height: 580px;
+  /* min-height: 580px; */
   padding: 10px;
   border: 1px solid #7eac00;
   border-top: none;
   border-right: none;
-  border-left-width: 10px;
+  border-left-width: 1px;
 }
 
 .card .img-projeto {
