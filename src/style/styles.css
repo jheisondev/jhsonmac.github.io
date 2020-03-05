@@ -193,23 +193,6 @@ section, article {
   border-radius: 0;
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .portifolio {
   justify-content: flex-start!important;
   min-height: 100vh;
@@ -225,7 +208,7 @@ section, article {
 
 .projetos .card {
   margin: 40px 0 10px 0;
-  width: 100%;
+  width: 90%;
   max-width: 980px;
   /* min-height: 580px; */
   padding: 10px;
